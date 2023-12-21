@@ -1,52 +1,54 @@
 body {
     margin: 0;
-    background: #f0f0f0; /* Changing background color to a light gray */
+    background: #f0f0f0;
     text-align: center;
-    font-family: 'Century Gothic', sans-serif; /* Applying font family to the entire body */
+    font-family: 'Century Gothic', sans-serif;
 }
 
 .box {
-    width: 80%; /* Adjusting box width to be responsive */
-    max-width: 600px; /* Setting a maximum width for larger screens */
+    width: 80%;
+    max-width: 600px;
     background: rgba(0, 0, 0, 0.4);
     padding: 40px;
-    text-align: center;
-    margin: 5% auto; /* Centering the box vertically and horizontally */
+    text-align: left; /* Aligning text to the left */
+    margin: 5% auto;
     color: white;
-    border-radius: 10px; /* Adding a slight border-radius for a rounded corner effect */
+    border-radius: 10px;
+    overflow: hidden; /* Clearing floats */
 }
 
 .box-img {
+    float: right; /* Floating the image to the right */
     border-radius: 50%;
-    width: 200px; /* Adjusting image size for responsiveness */
-    height: 200px; /* Adjusting image size for responsiveness */
-    object-fit: cover; /* Ensuring the image fits within the defined dimensions */
-    margin-bottom: 20px; /* Adding some space below the image */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 20px; /* Adding space between text and image */
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.4); /* Creating a grey box shadow around the image */
 }
 
 .box h1 {
     font-size: 40px;
     letter-spacing: 4px;
     font-weight: 100;
-    margin-bottom: 10px; /* Adding spacing below the h1 heading */
+    margin-bottom: 10px;
 }
 
 .box h2 {
-    font-size: 30px; /* Styling for section headings */
+    font-size: 30px;
     letter-spacing: 3px;
     font-weight: 100;
-    margin-top: 30px; /* Adding spacing above the section headings */
+    margin-top: 30px;
 }
 
 .box p {
     text-align: justify;
-    margin-bottom: 20px; /* Adding spacing below paragraphs */
+    margin-bottom: 20px;
 }
 
 /* Styling for specific sections */
 .about-me,
 .current-projects,
 .resume {
-    text-align: left; /* Adjusting text alignment for section content */
-    margin-bottom: 30px; /* Adding space between sections */
+    margin-bottom: 30px;
 }
