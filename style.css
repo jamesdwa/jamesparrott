@@ -7,29 +7,37 @@ body {
 
 .box {
     width: 80%;
-    max-width: 600px;
+    max-width: 1200px;
     background: rgba(0, 0, 0, 0.4);
     padding: 40px;
-    text-align: left; /* Aligning text to the left */
+    text-align: left;
     margin: 5% auto;
     color: white;
     border-radius: 10px;
-    overflow: hidden; /* Clearing floats */
+    overflow: hidden;
 }
 
-.box-img {
-    float: right; /* Floating the image to the right */
+.pfp-img {
+    float: right;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    margin-left: 20px; /* Adding space between text and image */
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.4); /* Creating a grey box shadow around the image */
+    margin-left: 25px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.project-img {
+    float: left;
+    width: 275px;
+    height: 275px;
+    margin-right: 30px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .box h1 {
     font-size: 40px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 100;
     margin-bottom: 10px;
 }
@@ -42,13 +50,64 @@ body {
 }
 
 .box p {
-    text-align: justify;
+    text-align: left;
     margin-bottom: 20px;
 }
 
-/* Styling for specific sections */
-.about-me,
+.about,
 .current-projects,
-.resume {
-    margin-bottom: 30px;
+completed-projects {
+    margin-bottom: 40px;
+}
+
+.about-paragraph {
+    font-size: 20px;
+}
+
+.projects-paragraph {
+    font-size: 20px;
+    margin-bottom: 150px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.socials-paragraph {
+    font-size: 20px;
+}
+
+.resume-paragraph {
+    font-size: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
 }
